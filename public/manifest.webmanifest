@@ -1,0 +1,11 @@
+{
+  "name": "Mapping Me Energy Map",
+  "short_name": "Energy Map",
+  "description": "A local-first neurodiversity workbook.",
+  "start_url": "/workbook/energy_map",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#f6d365",
+  "icons": []
+}
