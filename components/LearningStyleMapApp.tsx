@@ -1,7 +1,6 @@
 "use client";
 
 import { ChangeEvent, CSSProperties, useEffect, useState } from "react";
-import { LanguageToggle } from "@/components/language";
 
 type PanelId = "learn" | "test" | "takeaways";
 type Mode = "lively" | "calm";
@@ -501,26 +500,23 @@ export function LearningStyleMapApp() {
           <p className="eyebrow">Mapping Me</p>
           <h1>Learning Style Map</h1>
         </div>
-        <div className="topbar-controls">
-          <LanguageToggle />
-          <div className="mode-switch" aria-label="Presentation mode">
-            <button
-              aria-pressed={mode === "lively"}
-              className={mode === "lively" ? "active" : ""}
-              onClick={() => setMode("lively")}
-              type="button"
-            >
-              Lively
-            </button>
-            <button
-              aria-pressed={mode === "calm"}
-              className={mode === "calm" ? "active" : ""}
-              onClick={() => setMode("calm")}
-              type="button"
-            >
-              Calm
-            </button>
-          </div>
+        <div className="mode-switch" aria-label="Presentation mode">
+          <button
+            aria-pressed={mode === "lively"}
+            className={mode === "lively" ? "active" : ""}
+            onClick={() => setMode("lively")}
+            type="button"
+          >
+            Lively
+          </button>
+          <button
+            aria-pressed={mode === "calm"}
+            className={mode === "calm" ? "active" : ""}
+            onClick={() => setMode("calm")}
+            type="button"
+          >
+            Calm
+          </button>
         </div>
       </header>
 
