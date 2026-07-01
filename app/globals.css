@@ -1805,6 +1805,8 @@ textarea {
 
 .workbook-library p {
   color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.42;
   margin: 0;
 }
 
