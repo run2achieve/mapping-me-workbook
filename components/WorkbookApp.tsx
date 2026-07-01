@@ -18,6 +18,7 @@ import {
   WorkbookData,
   WorkbookMode
 } from "@/lib/workbook-storage";
+import { LanguageToggle } from "@/components/language";
 
 type SaveState = "loading" | "saved" | "saving" | "error";
 type ActivePanel = "daily" | "questions";
@@ -494,13 +495,16 @@ export function WorkbookApp() {
           <p className="eyebrow">Mapping Me</p>
           <h1>Mapping My Energy</h1>
         </div>
-        <div className="mode-switch" aria-label="Presentation mode">
-          <button className={workbook.mode === "lively" ? "active" : ""} onClick={() => setMode("lively")} type="button">
-            Lively
-          </button>
-          <button className={workbook.mode === "calm" ? "active" : ""} onClick={() => setMode("calm")} type="button">
-            Calm
-          </button>
+        <div className="topbar-controls">
+          <LanguageToggle />
+          <div className="mode-switch" aria-label="Presentation mode">
+            <button className={workbook.mode === "lively" ? "active" : ""} onClick={() => setMode("lively")} type="button">
+              Lively
+            </button>
+            <button className={workbook.mode === "calm" ? "active" : ""} onClick={() => setMode("calm")} type="button">
+              Calm
+            </button>
+          </div>
         </div>
       </header>
 

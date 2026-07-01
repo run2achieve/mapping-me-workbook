@@ -1,6 +1,7 @@
 "use client";
 
 import { ChangeEvent, useEffect, useState } from "react";
+import { LanguageToggle } from "@/components/language";
 
 type PanelId = "learn" | "profile" | "supports";
 type Mode = "lively" | "calm";
@@ -504,23 +505,26 @@ export function SensoryMapApp() {
           <p className="eyebrow">Mapping Me</p>
           <h1>Sensory Map</h1>
         </div>
-        <div className="mode-switch" aria-label="Presentation mode">
-          <button
-            aria-pressed={mode === "lively"}
-            className={mode === "lively" ? "active" : ""}
-            onClick={() => setMode("lively")}
-            type="button"
-          >
-            Lively
-          </button>
-          <button
-            aria-pressed={mode === "calm"}
-            className={mode === "calm" ? "active" : ""}
-            onClick={() => setMode("calm")}
-            type="button"
-          >
-            Calm
-          </button>
+        <div className="topbar-controls">
+          <LanguageToggle />
+          <div className="mode-switch" aria-label="Presentation mode">
+            <button
+              aria-pressed={mode === "lively"}
+              className={mode === "lively" ? "active" : ""}
+              onClick={() => setMode("lively")}
+              type="button"
+            >
+              Lively
+            </button>
+            <button
+              aria-pressed={mode === "calm"}
+              className={mode === "calm" ? "active" : ""}
+              onClick={() => setMode("calm")}
+              type="button"
+            >
+              Calm
+            </button>
+          </div>
         </div>
       </header>
 

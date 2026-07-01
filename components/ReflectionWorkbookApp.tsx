@@ -1,6 +1,7 @@
 "use client";
 
 import { ChangeEvent, CSSProperties, useEffect, useState } from "react";
+import { LanguageToggle } from "@/components/language";
 
 type PanelId = "cards" | "prompts" | "moments" | "notes";
 type Mode = "lively" | "calm";
@@ -1018,23 +1019,26 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
           <p className="eyebrow">{config.eyebrow}</p>
           <h1>{config.title}</h1>
         </div>
-        <div className="mode-switch" aria-label="Presentation mode">
-          <button
-            aria-pressed={data.mode === "lively"}
-            className={data.mode === "lively" ? "active" : ""}
-            onClick={() => setMode("lively")}
-            type="button"
-          >
-            Lively
-          </button>
-          <button
-            aria-pressed={data.mode === "calm"}
-            className={data.mode === "calm" ? "active" : ""}
-            onClick={() => setMode("calm")}
-            type="button"
-          >
-            Calm
-          </button>
+        <div className="topbar-controls">
+          <LanguageToggle />
+          <div className="mode-switch" aria-label="Presentation mode">
+            <button
+              aria-pressed={data.mode === "lively"}
+              className={data.mode === "lively" ? "active" : ""}
+              onClick={() => setMode("lively")}
+              type="button"
+            >
+              Lively
+            </button>
+            <button
+              aria-pressed={data.mode === "calm"}
+              className={data.mode === "calm" ? "active" : ""}
+              onClick={() => setMode("calm")}
+              type="button"
+            >
+              Calm
+            </button>
+          </div>
         </div>
       </header>
 
