@@ -406,8 +406,7 @@ export function SensoryPerceptionTestApp() {
                 <p className="eyebrow">SPQ Assessment</p>
                 <h2 id="spq-title">Select a version</h2>
                 <p className="prompt">
-                  This questionnaire measures sensory perception differences in adults. Select the version you would
-                  like to complete.
+                  {"This questionnaire measures sensory perception differences in adults.\nSelect the version you would like to complete."}
                 </p>
               </div>
               <div className="sensory-panel-actions">

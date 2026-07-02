@@ -570,8 +570,7 @@ export function SensoryMapApp() {
                 <p className="eyebrow">Sensory systems</p>
                 <h2 id="learn-sensory-title">Exploring different sensory channels</h2>
                 <p className="prompt">
-                  This is not a test or diagnosis. It is a way to notice which inputs cost energy, which ones help, and
-                  which ones depend on context.
+                  {"This is not a test or diagnosis.\nIt is a way to notice which inputs cost energy,\nwhich ones help,\nand which ones depend on context."}
                 </p>
               </div>
               <div className="sensory-panel-actions">
@@ -636,8 +635,7 @@ export function SensoryMapApp() {
                 <h2 id="profile-title">Your sensory profile</h2>
                 <h3 className="awareness-title">Awareness check</h3>
                 <p className="prompt">
-                  How does your sensory profile impact you? Pick what is most true right now, then add a short comment
-                  under each sensory channel.
+                  {"How does your sensory profile impact you?\nPick what is most true right now,\nthen add a short comment under each sensory channel."}
                 </p>
               </div>
               <button type="button" onClick={downloadProfileTestJpg}>Save sensory profile JPG</button>
@@ -692,8 +690,7 @@ export function SensoryMapApp() {
             <p className="eyebrow">Supports</p>
             <h2 id="supports-title">Things to notice and try</h2>
             <p className="prompt">
-              These are starting points, not rules. The useful question is: does this make the environment easier to
-              be in?
+              {"These are starting points, not rules.\nThe useful question is:\ndoes this make the environment easier to be in?"}
             </p>
             <div className="support-grid">
               {supportIdeas.map((support) => (

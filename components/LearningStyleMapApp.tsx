@@ -123,7 +123,7 @@ const reflectionPrompts: Array<{
   {
     id: "surprised",
     title: "What surprised me?",
-    prompt: "After reading different learning styles, what felt unexpected, new, or more complicated than you thought?",
+    prompt: "After reading different learning styles,\nwhat felt unexpected, new,\nor more complicated than you thought?",
     placeholder: "Example: I thought I was only visual, but movement and repetition may matter more than I expected."
   },
   {
@@ -135,7 +135,7 @@ const reflectionPrompts: Array<{
   {
     id: "try-next",
     title: "What do I want to test in real life?",
-    prompt: "Choose one small learning support or format you want to try before deciding whether it fits you.",
+    prompt: "Choose one small learning support or format\nyou want to try before deciding\nwhether it fits you.",
     placeholder: "Example: Next time I revise, I want to try speaking key ideas out loud and drawing a quick map."
   }
 ];
@@ -563,8 +563,7 @@ export function LearningStyleMapApp() {
                 <p className="eyebrow">Learning dimensions</p>
                 <h2 id="learn-style-title">Learning style is more than input format</h2>
                 <p className="prompt">
-                  This map looks at several dimensions of learning. It is not a fixed label; it is a way to notice what
-                  makes learning clearer, more available, and easier to use.
+                  {"This map looks at several dimensions of learning.\nIt is not a fixed label.\nIt is a way to notice what makes learning clearer,\nmore available, and easier to use."}
                 </p>
               </div>
               <div className="sensory-panel-actions">
@@ -638,8 +637,7 @@ export function LearningStyleMapApp() {
             <p className="eyebrow">After learning</p>
             <h2 id="learning-test-title">Reflection time</h2>
             <p className="prompt">
-              Before taking a test, pause with your own experience. The goal is not to find one perfect label; it is to
-              notice what feels familiar, what feels new, and what you may want to try.
+              {"Before taking a test, pause with your own experience.\nThe goal is not to find one perfect label.\nNotice what feels familiar,\nwhat feels new,\nand what you may want to try."}
             </p>
 
             <div className="reflection-question-grid">

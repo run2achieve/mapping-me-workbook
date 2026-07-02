@@ -753,9 +753,9 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
     context.fillText(config.promptsTitle, innerX, 166);
     context.font = "400 22px Arial";
     context.fillStyle = "#6B6457";
-    context.fillText(config.promptsIntro, innerX, 206);
+    const introBottom = drawWrappedText(context, config.promptsIntro, innerX, 206, innerWidth, 30);
 
-    let y = 270;
+    let y = Math.max(270, introBottom + 42);
     if (config.checklist) {
       context.fillStyle = "#2A2521";
       context.font = "700 30px Arial";
@@ -853,10 +853,12 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
     context.fillText(config.notesTitle, innerX, 166);
     context.font = "400 22px Arial";
     context.fillStyle = "#6B6457";
-    context.fillText(config.notesIntro, innerX, 206);
+    const introBottom = drawWrappedText(context, config.notesIntro, innerX, 206, innerWidth, 30);
+
+    const notesStartY = Math.max(280, introBottom + 44);
 
     if (config.noteEntries) {
-      let y = 280;
+      let y = notesStartY;
       if (filledEntries.length) {
         filledEntries.forEach((note, index) => {
           context.fillStyle = index % 2 === 0 ? "#FFF9EC" : "#F8EDD9";
@@ -889,11 +891,11 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
       context.fillStyle = "#FFF9EC";
       context.strokeStyle = "#2A2521";
       context.lineWidth = 2;
-      context.fillRect(innerX, 270, innerWidth, height - 360);
-      context.strokeRect(innerX, 270, innerWidth, height - 360);
+      context.fillRect(innerX, notesStartY, innerWidth, height - notesStartY - 90);
+      context.strokeRect(innerX, notesStartY, innerWidth, height - notesStartY - 90);
       context.fillStyle = "#2A2521";
       context.font = "400 22px Arial";
-      drawWrappedText(context, data.freeNotes || "Blank for now.", innerX + 24, 318, innerWidth - 48, 32);
+      drawWrappedText(context, data.freeNotes || "Blank for now.", innerX + 24, notesStartY + 48, innerWidth - 48, 32);
     }
 
     const link = document.createElement("a");

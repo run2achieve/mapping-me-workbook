@@ -318,6 +318,7 @@ h3 {
 .prompt {
   color: var(--muted);
   font-size: 1.1rem;
+  line-height: 1.48;
   max-width: 64ch;
   white-space: pre-line;
 }
@@ -1521,6 +1522,7 @@ textarea {
 .reality-prompt {
   color: var(--muted);
   margin: 10px 0 0;
+  white-space: pre-line;
 }
 
 .scenario-examples {
@@ -1687,6 +1689,10 @@ textarea {
   color: var(--muted);
   font-size: 0.92rem;
   margin: 5px 0 0;
+}
+
+.reflection-question-card small {
+  white-space: pre-line;
 }
 
 .learning-subtype.vote-selected {
@@ -1973,6 +1979,7 @@ textarea {
   color: var(--muted);
   margin-bottom: 0;
   max-width: 70ch;
+  white-space: pre-line;
 }
 
 .value-bank-key {

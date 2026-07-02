@@ -11,15 +11,15 @@ export const discoveringMyValuesConfig: ReflectionWorkbookConfig = {
     "Values are not homework answers.\nThey often show up in small clues:\nirritation, relief, admiration,\nloyalty, resistance,\nor the tiny things you keep returning to.",
   promptsTitle: "Prompts for noticing values",
   promptsIntro:
-    "Use these as starting points. The goal is not to rank your life perfectly; it is to notice what keeps asking for your attention.",
+    "Use these as starting points.\nThe goal is not to rank your life perfectly.\nIt is to notice what keeps asking for your attention.",
   notesTitle: "A place for unfinished values",
   notesIntro:
-    "This page can hold fragments: words that feel important, contradictions, things you are not ready to decide, and values that only appear in certain contexts.",
+    "This page can hold fragments:\nwords that feel important,\ncontradictions,\nthings you are not ready to decide,\nand values that only appear in certain contexts.",
   noteLabel: "Loose values notes",
   valueBank: {
     title: "Value bank",
     intro:
-      "Click a value once for This is my value, click again for Maybe, click a third time to clear it. You can choose as many or as few as you want.",
+      "Click a value once for This is my value.\nClick again for Maybe.\nClick a third time to clear it.\nYou can choose as many or as few as you want.",
     categories: [
       {
         id: "basic-wellbeing",
@@ -465,7 +465,7 @@ export const discoveringMyValuesConfig: ReflectionWorkbookConfig = {
     {
       id: "worth-the-cost",
       title: "Worth the cost",
-      prompt: "Which values still feel worth choosing, even when they take extra energy, time, courage, or consequences?",
+      prompt: "Which values still feel worth choosing,\neven when they take extra energy,\ntime, courage, or consequences?",
       examples: ["Honesty", "Creativity", "Justice", "Care", "Freedom", "Learning"]
     },
     {
@@ -491,13 +491,13 @@ export const exploringIdentityBeliefsConfig: ReflectionWorkbookConfig = {
   privacyNote: "Your identity notes save in this browser on this device. They are not uploaded.",
   cardsTitle: "Identity as a living map",
   cardsIntro:
-    "Identity does not need to become one polished sentence. It can be a map of roles, histories, communities, needs, boundaries, and beliefs in motion.",
+    "Identity does not need to become one polished sentence.\nIt can be a map of roles, histories,\ncommunities, needs, boundaries,\nand beliefs in motion.",
   promptsTitle: "Prompts for identity and belief",
   promptsIntro:
-    "These prompts are invitations, not a demand for certainty. Let contradictions sit on the page without forcing them to resolve.",
+    "These prompts are invitations,\nnot a demand for certainty.\nLet contradictions sit on the page\nwithout forcing them to resolve.",
   notesTitle: "A place for becoming",
   notesIntro:
-    "Use this space for words you are trying on, stories you are questioning, and beliefs that feel supportive, outdated, or still forming.",
+    "Use this space for words you are trying on,\nstories you are questioning,\nand beliefs that feel supportive,\noutdated, or still forming.",
   noteLabel: "Loose identity and belief notes",
   cards: [
     {
@@ -547,13 +547,13 @@ export const exploringIdentityBeliefsConfig: ReflectionWorkbookConfig = {
     {
       id: "self-story",
       title: "A self-story I inherited",
-      prompt: "What is a story about you that you did not fully choose? What parts still help, and what parts feel too small?",
+      prompt: "What is a story about you\nthat you did not fully choose?\nWhat parts still help,\nand what parts feel too small?",
       examples: ["Too sensitive", "Independent", "Difficult", "Gifted", "Quiet", "Responsible", "A lot"]
     },
     {
       id: "belief-body",
       title: "Where beliefs live",
-      prompt: "When you say a belief about yourself, what happens in your body: softening, bracing, blankness, heat, curiosity?",
+      prompt: "When you say a belief about yourself,\nwhat happens in your body:\nsoftening, bracing, blankness,\nheat, curiosity?",
       examples: ["I need to earn rest", "I am allowed support", "I am too much", "I can take up space"]
     },
     {
@@ -565,7 +565,7 @@ export const exploringIdentityBeliefsConfig: ReflectionWorkbookConfig = {
     {
       id: "trying-on",
       title: "Trying on language",
-      prompt: "Which words, labels, or descriptions are you curious about trying on without committing forever?",
+      prompt: "Which words, labels, or descriptions\nare you curious about trying on\nwithout committing forever?",
       examples: ["Neurodivergent", "Disabled", "Sensitive", "Creative", "System thinker", "Private", "In progress"]
     }
   ]
@@ -579,15 +579,15 @@ export const checkingInWithMyBodyConfig: ReflectionWorkbookConfig = {
   privacyNote: "Your body check-in notes save in this browser on this device. They are not uploaded.",
   cardsTitle: "Body signals as messages",
   cardsIntro:
-    "Body check-ins are not about doing them perfectly. They are a way to notice signals that may arrive quietly, late, loudly, or all at once.",
+    "Body check-ins are not about doing them perfectly.\nThey are a way to notice signals\nthat may arrive quietly, late,\nloudly, or all at once.",
   promptsTabLabel: "Body needs scan",
   promptsTitle: "Body needs scan",
   promptsIntro:
-    "When you feel off but cannot tell why, scan a few body basics before trying to explain everything.",
+    "When you feel off but cannot tell why,\nscan a few body basics\nbefore trying to explain everything.",
   notesTabLabel: "Body cues",
   notesTitle: "Body cues I notice",
   notesIntro:
-    "Save body cues you notice over time: sensations, patterns, needs, triggers, or small things that helped.",
+    "Save body cues you notice over time:\nsensations, patterns, needs, triggers,\nor small things that helped.",
   noteLabel: "What cue did you notice?",
   noteEntries: {
     addButtonLabel: "Add a body cue",
@@ -701,13 +701,13 @@ export const processingMyEmotionsConfig: ReflectionWorkbookConfig = {
   privacyNote: "Your emotion notes save in this browser on this device. They are not uploaded.",
   cardsTitle: "Emotions as information, not instructions",
   cardsIntro:
-    "An emotion can be real without being the whole story. This workbook is for making space around feelings before deciding what they mean.",
+    "An emotion can be real\nwithout being the whole story.\nThis workbook is for making space around feelings\nbefore deciding what they mean.",
   promptsTitle: "Prompts for emotional processing",
   promptsIntro:
-    "Use these prompts slowly. The aim is not to fix the feeling quickly; it is to notice its shape, context, message, and possible next support.",
+    "Use these prompts slowly.\nThe aim is not to fix the feeling quickly.\nIt is to notice its shape, context,\nmessage, and possible next support.",
   notesTitle: "A place for emotional weather",
   notesIntro:
-    "This space can hold contradictions, body clues, unfinished sentences, and feelings that do not yet have clean names.",
+    "This space can hold contradictions,\nbody clues, unfinished sentences,\nand feelings that do not yet have clean names.",
   noteLabel: "Loose emotion notes",
   cards: [
     {
@@ -769,13 +769,13 @@ export const processingMyEmotionsConfig: ReflectionWorkbookConfig = {
     {
       id: "need-underneath",
       title: "Need underneath",
-      prompt: "What need might be sitting underneath this feeling, even if the need is not easy to meet right now?",
+      prompt: "What need might be sitting underneath this feeling,\neven if the need is not easy\nto meet right now?",
       examples: ["Rest", "Repair", "Clarity", "Control", "Comfort", "Privacy", "Reassurance", "Justice"]
     },
     {
       id: "safe-expression",
       title: "Safe expression",
-      prompt: "What is one way this feeling could be expressed without turning into harm, pressure, or performance?",
+      prompt: "What is one way this feeling could be expressed\nwithout turning into harm,\npressure, or performance?",
       examples: ["Write a messy note", "Move", "Cry", "Draw", "Say one sentence", "Ask for space", "Use humor carefully"]
     }
   ]
@@ -789,13 +789,13 @@ export const exploringBoundariesConfig: ReflectionWorkbookConfig = {
   privacyNote: "Your boundary notes save in this browser on this device. They are not uploaded.",
   cardsTitle: "Boundaries as care for access",
   cardsIntro:
-    "Boundaries are not only hard lines. They can be pacing, clarity, sensory needs, communication preferences, recovery time, and consent.",
+    "Boundaries are not only hard lines.\nThey can be pacing, clarity,\nsensory needs, communication preferences,\nrecovery time, and consent.",
   promptsTitle: "Prompts for exploring boundaries",
   promptsIntro:
-    "These prompts help you notice where a boundary may already exist in your body, behavior, energy, or resentment before it has language.",
+    "These prompts help you notice\nwhere a boundary may already exist:\nin your body, behavior, energy,\nor resentment before it has language.",
   notesTitle: "A place for limits and room",
   notesIntro:
-    "Use this space for boundary drafts, scripts, patterns, and the places where you are still learning what feels possible.",
+    "Use this space for boundary drafts,\nscripts, patterns,\nand the places where you are still learning\nwhat feels possible.",
   noteLabel: "Loose boundary notes",
   cards: [
     {
@@ -878,7 +878,7 @@ export const whatILoveAboutMyselfConfig: ReflectionWorkbookConfig = {
   cardsTabLabel: "Things I like",
   cardsTitle: "Things I like about myself",
   cardsIntro:
-    "Loving something about yourself does not have to sound grand. It can be specific, quiet, funny, practical, uncertain, or still growing.",
+    "Loving something about yourself\ndoes not have to sound grand.\nIt can be specific, quiet, funny,\npractical, uncertain, or still growing.",
   promptsTabLabel: "Reflection prompts",
   promptsTitle: "Prompts for self-appreciation",
   promptsIntro:
@@ -886,7 +886,7 @@ export const whatILoveAboutMyselfConfig: ReflectionWorkbookConfig = {
   notesTabLabel: "Past moments",
   notesTitle: "Moments I still remember",
   notesIntro:
-    "Write down something from the past that still makes you feel warm, moved, strong, brave, kind, or glad you were you.",
+    "Write down something from the past\nthat still makes you feel warm,\nmoved, strong, brave, kind,\nor glad you were you.",
   noteLabel: "What happened, and what did you do that still feels impressive?",
   noteEntries: {
     addButtonLabel: "Add a memory",
@@ -897,7 +897,7 @@ export const whatILoveAboutMyselfConfig: ReflectionWorkbookConfig = {
   moments: {
     tabLabel: "Recent moments",
     title: "Recent moments I liked myself",
-    intro: "Collect recent moments when you felt proud of yourself, glad you were you, or quietly impressed by what you did.",
+    intro: "Collect recent moments when you felt proud of yourself,\nglad you were you,\nor quietly impressed by what you did.",
     momentLabel: "What happened?",
     reasonLabel: "What did it show you about yourself?",
     momentPlaceholder: "A recent moment, tiny or big...",
@@ -961,13 +961,13 @@ export const myGettingStartedToolkitConfig: ReflectionWorkbookConfig = {
   privacyNote: "Your getting-started toolkit saves in this browser on this device. It is not uploaded.",
   cardsTitle: "Tools for crossing the start line",
   cardsIntro:
-    "Starting is not always about motivation. Sometimes it needs less friction, a smaller first move, body support, clearer edges, or permission to begin badly.",
+    "Starting is not always about motivation.\nSometimes it needs less friction,\na smaller first move, body support,\nclearer edges, or permission to begin badly.",
   promptsTitle: "Prompts for building the toolkit",
   promptsIntro:
-    "Use these prompts to collect tools that actually help you start. Tiny, specific, repeatable tools are more useful than perfect plans.",
+    "Use these prompts to collect tools\nthat actually help you start.\nTiny, specific, repeatable tools\nare more useful than perfect plans.",
   notesTitle: "A place for start-up tools",
   notesIntro:
-    "This space can hold scripts, rituals, first steps, friction points, body supports, and reminders that help you move from stuck to started.",
+    "This space can hold scripts, rituals,\nfirst steps, friction points,\nbody supports, and reminders\nthat help you move from stuck to started.",
   noteLabel: "Loose getting-started toolkit notes",
   cards: [
     {
@@ -1023,7 +1023,7 @@ export const myGettingStartedToolkitConfig: ReflectionWorkbookConfig = {
     {
       id: "first-move",
       title: "First move library",
-      prompt: "For common tasks, what is the smallest first move that usually helps you cross from not-started to started?",
+      prompt: "For common tasks,\nwhat is the smallest first move\nthat helps you cross from not-started\nto started?",
       examples: ["Open document", "Put item on desk", "Set 5-minute timer", "Write a messy list", "Stand up", "Send one text"]
     },
     {

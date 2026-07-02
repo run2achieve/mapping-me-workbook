@@ -363,8 +363,7 @@ export function LearningStyleTestApp() {
                 <p className="eyebrow">Felder-Soloman Learning Style Assessment</p>
                 <h2 id="ils-title">Index of Learning Styles</h2>
                 <p className="prompt">
-                  For each question, select the answer that best describes your preference. There are 44 questions total
-                  covering four dimensions of learning styles.
+                  {"For each question, select the answer that best describes your preference.\nThere are 44 questions total,\ncovering four dimensions of learning styles."}
                 </p>
               </div>
               <div className="sensory-panel-actions">
