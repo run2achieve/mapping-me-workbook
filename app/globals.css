@@ -319,6 +319,7 @@ h3 {
   color: var(--muted);
   font-size: 1.1rem;
   max-width: 64ch;
+  white-space: pre-line;
 }
 
 .suggestions {

@@ -8,7 +8,7 @@ export const discoveringMyValuesConfig: ReflectionWorkbookConfig = {
   privacyNote: "Your values notes save in this browser on this device. They are not uploaded.",
   cardsTitle: "Small clues about what matters",
   cardsIntro:
-    "Values are not homework answers.\nThey often show up as irritation, relief, admiration, loyalty, resistance, or the tiny things you keep returning to.",
+    "Values are not homework answers.\nThey often show up in small clues:\nirritation, relief, admiration,\nloyalty, resistance,\nor the tiny things you keep returning to.",
   promptsTitle: "Prompts for noticing values",
   promptsIntro:
     "Use these as starting points. The goal is not to rank your life perfectly; it is to notice what keeps asking for your attention.",
