@@ -585,23 +585,26 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
     maxWidth: number,
     lineHeight: number
   ) {
-    const words = text.split(/\s+/);
-    let line = "";
     let currentY = y;
 
-    for (const word of words) {
-      const testLine = line ? `${line} ${word}` : word;
-      if (context.measureText(testLine).width > maxWidth && line) {
-        context.fillText(line, x, currentY);
-        line = word;
-        currentY += lineHeight;
-      } else {
-        line = testLine;
-      }
-    }
+    for (const paragraph of text.split(/\n/)) {
+      const words = paragraph.split(/\s+/).filter(Boolean);
+      let line = "";
 
-    if (line) {
-      context.fillText(line, x, currentY);
+      for (const word of words) {
+        const testLine = line ? `${line} ${word}` : word;
+        if (context.measureText(testLine).width > maxWidth && line) {
+          context.fillText(line, x, currentY);
+          line = word;
+          currentY += lineHeight;
+        } else {
+          line = testLine;
+        }
+      }
+
+      if (line) {
+        context.fillText(line, x, currentY);
+      }
       currentY += lineHeight;
     }
 
@@ -620,7 +623,7 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
       .filter((item) => item.comment);
     const valueRows = selectedValues.length ? Math.ceil(selectedValues.length / 3) : 1;
     const commentRows = cardComments.length ? cardComments.length : 1;
-    const height = 300 + valueRows * 58 + commentRows * 128 + 180;
+    const height = 360 + valueRows * 58 + commentRows * 128 + 180;
     const canvas = document.createElement("canvas");
     canvas.width = width * scale;
     canvas.height = height * scale;
@@ -645,9 +648,9 @@ export function ReflectionWorkbookApp({ config }: { config: ReflectionWorkbookCo
     context.fillText("Inspiration cards", innerX, 166);
     context.font = "400 22px Arial";
     context.fillStyle = "#6B6457";
-    context.fillText(config.cardsIntro, innerX, 206);
+    const introBottom = drawWrappedText(context, config.cardsIntro, innerX, 206, innerWidth, 30);
 
-    let y = 270;
+    let y = introBottom + 42;
     context.fillStyle = "#2A2521";
     context.font = "700 30px Arial";
     context.fillText("Values marked", innerX, y);
